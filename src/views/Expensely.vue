@@ -6,17 +6,21 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col">
-                <YourBalance :total="+total"/>
-            </div>
-        </div>
+          <div class="bie">
 
-        <div class="row">
-            <div class="col">
-                <ExpensesIncome :income="+income" :expenses="+expenses"/>
+            <div class="row">
+              <div class="col">
+                <YourBalance :total="+total"/>
+              </div>
             </div>
-        </div>
+            
+            <div class="row">
+              <div class="col">
+                <ExpensesIncome :income="+income" :expenses="+expenses"/>
+              </div>
+            </div>
+            
+          </div>
 
         <div class="row">
             <div class="col">
@@ -146,6 +150,11 @@ import { useToast } from 'vue-toastification';
 .head h2{
     text-align: center;
     color: #198754;
+}
+.bie{
+  background: #dbf7ea;
+  padding: 10px;
+  border: 2px dashed #198754;
 }
 
 </style>
